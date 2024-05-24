@@ -24,7 +24,7 @@ Fashion-MNIST is a dataset of Zalando's article images—consisting of a trainin
 
 ### WGAN
 <div align="center">
-  <img src="images/dcgan.jpg", width="400">
+  <img src="images/wgan.jpg", width="400">
 </div>
 
 ## Hyperparameters
@@ -75,13 +75,13 @@ Iterations=Num of Epochs*Num of batches=
   <img src="images/wgan_train.png", width="600">
 </div>
 
-* Training Time: The training time of the WGAN + GP model was much longer compared to the training of the DCGAN model. It took us more then 24 hours to train it on CPU.
+* Training Time: The training time of the WGAN + GP model was much longer compared to the training of the DCGAN model. It took more then 24 hours to train it on CPU.
 Calculation of the number of iterations (for every 1 generator iteration, there are 5 discriminator iterations):
 Iterations=Num of Generator Iterations=7,000
 
 
 * Convergence: The WGAN loss plot looks completely different than the plot before. It less “noisy” and have a weird shape, not like usual loss functions that we are used to.
-Up to 1000 iterations the plot has minor fluctuations, and the model seems to enter a local minimum. When we reached 1000 iterations the plot jumps significantly and it looks like it's going to get better, and after about 1500 iterations the loss of the discriminator stabilizes, and the loss of the generator slowly fades. As we already know the training process is unstable and difficult to converge.
+Up to 1000 iterations the plot has minor fluctuations, and the model seems to enter a local minimum. When it reached 1000 iterations the plot jumps significantly and it looks like it's going to get better, and after about 1500 iterations the loss of the discriminator stabilizes, and the loss of the generator slowly fades. As already know the training process is unstable and difficult to converge.
 
 
 ## Results
